@@ -29,7 +29,7 @@ def inferensi_mamdani(kepadatan_jalur1, kepadatan_jalur2):
 
 # Defuzzifikasi
 def defuzzifikasi_mamdani(hasil_inferensi):
-    durasi_lampu_hijau = (((hasil_inferensi[0] * 10) + (hasil_inferensi[1] * 10) + (hasil_inferensi[2] * 50) + (hasil_inferensi[3] * 20) ) / 
+    durasi_lampu_hijau = (((hasil_inferensi[0] * 20) + (hasil_inferensi[1] * 10) + (hasil_inferensi[2] * 50) + (hasil_inferensi[3] * 20) ) / 
                     (hasil_inferensi[0] + hasil_inferensi[1] + hasil_inferensi[2] + hasil_inferensi[3]))
 
     return durasi_lampu_hijau
